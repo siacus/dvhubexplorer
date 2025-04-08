@@ -1,10 +1,9 @@
 # Dataverse Explorer Shiny App
 # This app connects to the Dataverse Hub API to visualize statistics about Dataverse installations
-# SM Iacus 2025
 
 # MIT License
 # 
-# Copyright (c) 2023-2024 Institute for Quantitative Social Science, Stefano M. Iacus
+# Copyright (c) 2025 Institute for Quantitative Social Science, Stefano M. Iacus
 # 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
