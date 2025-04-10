@@ -4,5 +4,3 @@ Simple code of a Shiny App that leverages the [Dataverse Hub](https://hub.datave
 The application is currently deployed [here](https://askdataverse.shinyapps.io/dvhub/).
 
 Visit also the [Dataverse Hub repo](https://github.com/IQSS/dataverse-hub) on github.
-
-There are a few issues when filtering data, not time to fix it, please contribute code at will.
