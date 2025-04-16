@@ -52,6 +52,7 @@ safe_api_call <- function(endpoint, query_params = list()) {
   tryCatch(
     {
       full_url <- paste0(base_url, endpoint)
+      query_params[["cb"]] <- as.numeric(Sys.time())
       message(paste("Calling API:", full_url))
       response <- GET(
         url = full_url,
