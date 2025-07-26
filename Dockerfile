@@ -14,9 +14,18 @@ RUN apt-get update && apt-get install -y \
     libxml2-dev \
     libssl-dev \
     libabsl-dev \
+    g++ \
+    libzstd-dev \
+    liblz4-dev \
+    libsnappy-dev \
+    libthrift-dev \
     less \
+    libprotobuf-dev protobuf-compiler \
+    libpng-dev \
+    libjpeg-dev \
+    libcairo2-dev \
+    xvfb \
     && rm -rf /var/lib/apt/lists/*
-
 
 # Install common R packages for Shiny apps
 RUN R -e "install.packages(c( \
