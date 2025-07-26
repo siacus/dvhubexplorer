@@ -5,7 +5,7 @@ The application is currently deployed [here](http://140.247.120.209:3838/dvhubex
 
 Visit also the [Dataverse Hub repo](https://github.com/IQSS/dataverse-hub) on github.
 
-# Deployment on shiny-sever
+# Deployment on dockerized Shiny Server
 We deployed it on a dockerized Shiny server for ARM on a M4 Mac-mini. This is a custom build because
 Shiny server is not officially built for ARM hardware.
 
