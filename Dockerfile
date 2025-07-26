@@ -4,6 +4,7 @@ FROM hvalev/shiny-server-arm:latest
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
+    cmake \
     gdal-bin \
     libgdal-dev \
     libproj-dev \
@@ -12,6 +13,7 @@ RUN apt-get update && apt-get install -y \
     libcurl4-openssl-dev \
     libxml2-dev \
     libssl-dev \
+    libabsl-dev \
     less \
     && rm -rf /var/lib/apt/lists/*
 
@@ -38,7 +40,17 @@ RUN R -e "install.packages(c( \
   'plotly', \
   'tidyr', \
   'lubridate',\
-  'shinycssloaders'), \
+  'shinycssloaders',\
+  'arrow', \
+  'sf', \
+  'viridis', \
+  'bslib', \
+  'htmlwidgets', \
+  'webshot', \
+  'ggplot2', \
+  'zoo', \
+  'scales' \
+  ), \
   repos='https://cloud.r-project.org')"
 
 # Expose Shiny Server port
