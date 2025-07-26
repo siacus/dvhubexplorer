@@ -57,7 +57,7 @@ safe_api_call <- function(endpoint, query_params = list()) {
       response <- GET(
         url = full_url,
         query = query_params,
-        timeout(10)
+        timeout(10), config = httr::config(ssl_verifypeer = FALSE)
       )
       status <- status_code(response)
       message(paste("Status code:", status))
